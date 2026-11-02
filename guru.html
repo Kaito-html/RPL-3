@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guru &amp; Staff — XII RPL 3</title>
+  <meta name="description" content="Profil Guru dan Staff Pengajar XII RPL 3 SMK Negeri 1."/>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg"/>
+  <meta name="theme-color" content="#141519"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Ambient Grey Glow -->
+  <div class="ambient-glow ambient-1"></div>
+  <div class="ambient-glow ambient-2"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo-mark">
+        <img src="images/logo.jpg" alt="Logo XII RPL 3">
+      </div>
+      <div>
+        <div class="nav-title">XII RPL 3</div>
+        <div class="nav-subtitle">SMK Negeri 1 · Angkatan 2023</div>
+      </div>
+    </div>
+
+    <ul class="nav-center" id="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="siswa.html">Siswa</a></li>
+      <li><a href="guru.html" class="active">Guru</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Ganti mode tema">
+        <span class="toggle-icon sun">☀️</span>
+        <div class="toggle-knob"></div>
+        <span class="toggle-icon moon">🌙</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Buka Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <span class="section-label">// STAFF &amp; PENDIDIK</span>
+      <h1 class="page-hero-title">
+        Guru &amp; <span class="silver-gradient-text">Staff Pengajar</span>
+      </h1>
+      <p class="page-hero-desc">
+        Sosok berdedikasi yang membimbing dan mendampingi perjalanan belajar kami menuju industri teknologi.
+      </p>
+    </header>
+
+    <!-- Guru Section (Hanya Foto, Nama, Jabatan) -->
+    <main class="guru-section">
+      <div class="guru-grid">
+
+        <!-- 01. Kaprodi RPL -->
+        <article class="guru-card reveal">
+          <div class="guru-photo-frame">
+            <!-- Jika ada foto, letakkan di images/guru/kaprodi.jpg -->
+            <!-- <img src="images/guru/kaprodi.jpg" alt="Bpk. Risal Pakaya S.Kom"> -->
+            <span>RP</span>
+          </div>
+          <h2 class="guru-nama">Risal Pakaya, S.Kom</h2>
+          <span class="guru-jabatan">Kaprodi RPL</span>
+        </article>
+
+        <!-- 02. Kepala Bengkel -->
+        <article class="guru-card reveal">
+          <div class="guru-photo-frame">
+            <!-- Jika ada foto, letakkan di images/guru/kabeng.jpg -->
+            <!-- <img src="images/guru/kabeng.jpg" alt="Kepala Bengkel"> -->
+            <span>KB</span>
+          </div>
+          <h2 class="guru-nama">Yati Suryati Sapji, S.Kom</h2>
+          <span class="guru-jabatan">Kepala Bengkel</span>
+        </article>
+
+        <!-- 03. Wali Kelas -->
+        <article class="guru-card reveal">
+          <div class="guru-photo-frame">
+            <!-- Jika ada foto, letakkan di images/guru/walikelas.jpg -->
+            <!-- <img src="images/guru/walikelas.jpg" alt="Ibu Dewi Rahmawati S.Kom"> -->
+            <span>DR</span>
+          </div>
+          <h2 class="guru-nama">Herlina Didipu, S.Kom</h2>
+          <span class="guru-jabatan">Wali Kelas XII RPL 3</span>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">XII RPL 3 — SMK Negeri 1</div>
+    <p>Angkatan 2023 · Rekayasa Perangkat Lunak · Dibuat dengan dedikasi bersama</p>
+  </footer>
+
+  <!-- Lightbox Modal (Lihat Full di Tab yang Sama) -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-content">
+      <div class="lightbox-controls">
+        <a href="#" id="lightbox-direct-link" class="lightbox-btn" title="Buka gambar langsung">
+          <span>🔗 Buka File</span>
+        </a>
+        <button class="lightbox-btn lightbox-close-btn" id="lightbox-close" aria-label="Tutup">
+          ✕
+        </button>
+      </div>
+      <img src="" alt="Pratinjau Foto Penuh" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

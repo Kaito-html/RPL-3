@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daftar Siswa — XII RPL 3</title>
+  <meta name="description" content="Profil lengkap 29 siswa kelas XII RPL 3 SMK Negeri 1."/>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg"/>
+  <meta name="theme-color" content="#141519"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Ambient Grey Glow -->
+  <div class="ambient-glow ambient-1"></div>
+  <div class="ambient-glow ambient-2"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo-mark">
+        <img src="images/logo.jpg" alt="Logo XII RPL 3">
+      </div>
+      <div>
+        <div class="nav-title">XII RPL 3</div>
+        <div class="nav-subtitle">SMK Negeri 1 · Angkatan 2023</div>
+      </div>
+    </div>
+
+    <ul class="nav-center" id="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="siswa.html" class="active">Siswa</a></li>
+      <li><a href="guru.html">Guru</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Ganti mode tema">
+        <span class="toggle-icon sun">☀️</span>
+        <div class="toggle-knob"></div>
+        <span class="toggle-icon moon">🌙</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Buka Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <span class="section-label">// ANGGOTA KELAS</span>
+      <h1 class="page-hero-title">
+        29 Siswa <span class="silver-gradient-text">Berbakat</span>
+      </h1>
+      <p class="page-hero-desc">
+        Setiap individu membawa keunikan potensi, kreativitas, dan semangat untuk berinovasi di bidang rekayasa perangkat lunak.
+      </p>
+    </header>
+
+    <!-- Students Section -->
+    <section class="section" style="padding-top: 0;">
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="search" 
+          class="search-input" 
+          id="search-input" 
+          placeholder="Cari nama siswa..." 
+          autocomplete="off"
+        />
+      </div>
+
+      <p class="search-count" id="search-count">Menampilkan 29 dari 29 siswa</p>
+
+      <div class="students-grid" id="students-grid"></div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">XII RPL 3 — SMK Negeri 1</div>
+    <p>Angkatan 2023 · Rekayasa Perangkat Lunak · Dibuat dengan dedikasi bersama</p>
+  </footer>
+
+  <!-- Lightbox Modal (Lihat Full di Tab yang Sama) -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-content">
+      <div class="lightbox-controls">
+        <a href="#" id="lightbox-direct-link" class="lightbox-btn" title="Buka gambar langsung">
+          <span>🔗 Buka File</span>
+        </a>
+        <button class="lightbox-btn lightbox-close-btn" id="lightbox-close" aria-label="Tutup">
+          ✕
+        </button>
+      </div>
+      <img src="" alt="Pratinjau Foto Penuh" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

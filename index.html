@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XII RPL 3 — Portofolio Resmi Kelas</title>
+  <meta name="description" content="Website portofolio resmi kelas XII RPL 3 SMK Negeri 1 jurusan Rekayasa Perangkat Lunak."/>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg"/>
+  <meta name="theme-color" content="#141519"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- Ambient Grey Glow -->
+  <div class="ambient-glow ambient-1"></div>
+  <div class="ambient-glow ambient-2"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <div class="nav-logo-mark">
+        <img src="images/logo.jpg" alt="Logo XII RPL 3">
+      </div>
+      <div>
+        <div class="nav-title">XII RPL 3</div>
+        <div class="nav-subtitle">SMK Negeri 1 · Angkatan 2023</div>
+      </div>
+    </div>
+
+    <ul class="nav-center" id="nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="siswa.html">Siswa</a></li>
+      <li><a href="guru.html">Guru</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Ganti mode tema">
+        <span class="toggle-icon sun">☀️</span>
+        <div class="toggle-knob"></div>
+        <span class="toggle-icon moon">🌙</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Buka Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="badge-tag">
+          <span class="badge-dot"></span>
+          Rekayasa Perangkat Lunak · 2023
+        </div>
+
+        <h1 class="hero-title">
+          Generasi Pengembang<br/>
+          <span class="silver-gradient-text">Masa Depan Digital</span>
+        </h1>
+
+        <div class="hero-typing-box">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+
+        <p class="hero-desc">
+          29 talenta siswa dan 3 pendidik berdedikasi, bersinergi mendalami rekayasa perangkat lunak dan membangun inovasi teknologi.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="siswa.html" class="btn btn-primary">🎓 Daftar Siswa</a>
+          <a href="guru.html" class="btn btn-outline">👨‍🏫 Profil Guru</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-number" data-count="29">0</div>
+          <div class="stat-label">Total Siswa</div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">👨‍🏫</div>
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Guru Pembimbing</div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">💻</div>
+          <div class="stat-number" data-count="12">0</div>
+          <div class="stat-label">Bidang Keahlian</div>
+        </div>
+
+        <div class="stat-card reveal">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Tahun Kebersamaan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="tentang">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-header" style="text-align: left; margin-bottom: 1.5rem;">
+            <span class="section-label">// KOMPETENSI KEAHLIAN</span>
+            <h2 class="section-title">Fokus &amp; <span class="silver-gradient-text">Spesialisasi</span></h2>
+            <p class="section-desc">
+              Kurikulum praktis berbasis industri yang membekali kami untuk siap terjun ke dunia profesional software engineering.
+            </p>
+          </div>
+
+          <div class="about-features">
+            <div class="feature-item reveal">
+              <div class="feature-icon-box">🌐</div>
+              <div>
+                <div class="feature-title">Modern Front-End Development</div>
+                <div class="feature-desc">Membangun arsitektur website responsif, aksesibel, dan berkinerja tinggi dengan standar terkini.</div>
+              </div>
+            </div>
+
+            <div class="feature-item reveal">
+              <div class="feature-icon-box">⚙️</div>
+              <div>
+                <div class="feature-title">Back-End &amp; Database Systems</div>
+                <div class="feature-desc">Pengelolaan logika server, struktur basis data relasional, dan integrasi API yang andal.</div>
+              </div>
+            </div>
+
+            <div class="feature-item reveal">
+              <div class="feature-icon-box">☕</div>
+              <div>
+                <div class="feature-title">Java &amp; NetBeans</div>
+                <div class="feature-desc">Pengembangan aplikasi desktop berorientasi objek (OOP) menggunakan bahasa Java dan NetBeans IDE.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-dot"></div>
+              <div class="code-dot"></div>
+              <div class="code-dot"></div>
+              <span style="margin-left: 0.5rem; font-size: 0.72rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">index.html</span>
+            </div>
+            <div class="code-content">
+              <div><span class="cm">&lt;!-- Struktur Halaman Kelas --&gt;</span></div>
+              <div><span class="kw">&lt;!DOCTYPE</span> <span class="fn">html</span><span class="kw">&gt;</span></div>
+              <div><span class="kw">&lt;html</span> <span class="fn">lang</span>=<span class="st">"id"</span><span class="kw">&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="kw">&lt;head&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;title&gt;</span>XII RPL 3 · SMKN 1<span class="kw">&lt;/title&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;meta</span> <span class="fn">name</span>=<span class="st">"jurusan"</span> <span class="fn">content</span>=<span class="st">"RPL"</span><span class="kw">&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="kw">&lt;/head&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="kw">&lt;body&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;main</span> <span class="fn">class</span>=<span class="st">"rpl3-2023"</span><span class="kw">&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;h1&gt;</span>Generasi Digital<span class="kw">&lt;/h1&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;p&gt;</span>29 Siswa Siap Berkarya<span class="kw">&lt;/p&gt;</span></div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">&lt;/main&gt;</span></div>
+              <div>&nbsp;&nbsp;<span class="kw">&lt;/body&gt;</span></div>
+              <div><span class="kw">&lt;/html&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moments Section -->
+    <section class="section" id="momen" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="section-header">
+        <span class="section-label">// DOKUMENTASI</span>
+        <h2 class="section-title">Momen <span class="silver-gradient-text">Kami</span></h2>
+      </div>
+
+      <div class="photos-grid">
+        <!-- Foto 1 -->
+        <a href="images/momen/1.jpg" class="photo-card reveal lightbox-trigger" data-full="images/momen/1.jpg" aria-label="Lihat Foto 1">
+          <img src="images/momen/1.jpg" alt="Momen 1" loading="lazy">
+          <div class="photo-zoom-hint">
+            <span class="photo-zoom-icon">⛶</span>
+          </div>
+        </a>
+
+        <!-- Foto 2 -->
+        <a href="images/momen/2.jpg" class="photo-card reveal lightbox-trigger" data-full="images/momen/2.jpg" aria-label="Lihat Foto 2">
+          <img src="images/momen/2.jpg" alt="Momen 2" loading="lazy">
+          <div class="photo-zoom-hint">
+            <span class="photo-zoom-icon">⛶</span>
+          </div>
+        </a>
+
+        <!-- Foto 3 -->
+        <a href="images/momen/3.jpeg" class="photo-card reveal lightbox-trigger" data-full="images/momen/3.jpeg" aria-label="Lihat Foto 3">
+          <img src="images/momen/3.jpeg" alt="Momen 3" loading="lazy">
+          <div class="photo-zoom-hint">
+            <span class="photo-zoom-icon">⛶</span>
+          </div>
+        </a>
+
+        <!-- Foto 4 -->
+        <a href="images/momen/4.jpg" class="photo-card reveal lightbox-trigger" data-full="images/momen/4.jpg" aria-label="Lihat Foto 4">
+          <img src="images/momen/4.jpg" alt="Momen 4" loading="lazy">
+          <div class="photo-zoom-hint">
+            <span class="photo-zoom-icon">⛶</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Instagram Card -->
+      <div class="ig-card reveal">
+        <div class="ig-icon-badge">📸</div>
+        <div class="ig-title">Dokumentasi Harian di Instagram</div>
+        <p class="ig-desc">Ikuti aktivitas, proyek karya, dan cerita seru dari warga kelas XII RPL 3.</p>
+        <a href="https://www.instagram.com/chaoticdevs.class?igsh=MTQ2dnlld2Z3dDY0MQ==" target="_blank" rel="noopener" class="ig-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @chaoticdevs.class
+        </a>
+        <div class="ig-handle">instagram.com/chaoticdevs.class</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-brand">XII RPL 3 — SMK Negeri 1</div>
+    <p>Angkatan 2023 · Rekayasa Perangkat Lunak · Dibuat dengan dedikasi bersama</p>
+  </footer>
+
+  <!-- Lightbox Modal (Lihat Full di Tab yang Sama) -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="lightbox-content">
+      <div class="lightbox-controls">
+        <a href="#" id="lightbox-direct-link" class="lightbox-btn" title="Buka gambar langsung">
+          <span>🔗 Buka File</span>
+        </a>
+        <button class="lightbox-btn lightbox-close-btn" id="lightbox-close" aria-label="Tutup">
+          ✕
+        </button>
+      </div>
+      <img src="" alt="Foto Momen Full" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
